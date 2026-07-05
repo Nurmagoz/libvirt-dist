@@ -47,9 +47,9 @@
   </pm>
 
   <devices>
-    <disk type="volume" device="disk">
+    <disk type="file" device="disk">
       <driver name="qemu" type="qcow2"/>
-      <source pool="default" volume="Whonix-Workstation.qcow2"/>
+      <source file="/home/user/.local/share/libvirt/images/Whonix-Workstation.qcow2"/>
       <target dev="vda" bus="virtio"/>
     </disk>
 
